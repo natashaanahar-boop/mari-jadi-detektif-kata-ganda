@@ -1,0 +1,30 @@
+.hero-characters{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin:40px 0;
+}
+
+.hero-characters img{
+width:280px;
+max-width:100%;
+animation:floatHero 4s ease-in-out infinite;
+filter:drop-shadow(0 0 25px rgba(250,204,21,0.7));
+}
+
+@keyframes floatHero{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
